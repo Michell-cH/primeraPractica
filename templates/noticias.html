@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - TechWorld</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">TechWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/quienesSomos">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/servicios">Servicios</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/noticias">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <h1>Últimas Noticias</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='img/nuevo.webp') }}" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Lanzamiento de Nuevas Laptops de Alto Rendimiento</h5>
+                        <p class="card-text">Descripción: TechWorld se complace en anunciar el lanzamiento 
+                            de su última línea de laptops de alto rendimiento. Estas nuevas máquinas, equipadas 
+                            con procesadores de última generación y pantallas 4K, están diseñadas para satisfacer 
+                            las necesidades de gamers y profesionales creativos. Las laptops están disponibles para 
+                            preordenar en nuestra tienda en línea y en nuestras ubicaciones físicas.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='img/black.webp') }}" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Promociones Especiales para el Black Friday</h5>
+                        <p class="card-text">Fecha: 1 de noviembre de 2024
+                            Descripción: ¡Prepárate para las ofertas más grandes del año! TechWorld anunciará promociones exclusivas durante el 
+                            Black Friday, con descuentos de hasta el 40% en una amplia gama de productos, incluyendo computadoras de escritorio,
+                             laptops y accesorios. No te pierdas la oportunidad de actualizar tu tecnología a precios increíbles. Las ofertas 
+                             estarán disponibles tanto en línea como en nuestras tiendas.</p>
+                        <a href="/contacto" class="btn btn-primary">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='img/idea.webp') }}" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Feria de Tecnología Local: Ven a Conocernos</h5>
+                        <p class="card-text">Fecha: 10 de diciembre de 2024
+                            Descripción: TechWorld estará presente en la Feria de Tecnología de la ciudad el 15 de diciembre de 2024. 
+                            Te invitamos a visitarnos en nuestro stand, donde podrás probar nuestros últimos productos, participar en sorteos y recibir asesoramiento de nuestro equipo de expertos. Además, habrá charlas sobre las tendencias tecnológicas y demostraciones en vivo. ¡Esperamos verte allí!</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center mt-5">
+        <p>&copy; TechWorld 2024</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

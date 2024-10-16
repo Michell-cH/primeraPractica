@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - TechWorld</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">TechWorld</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/quienesSomos">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="/noticias">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Quiénes Somos</h2>
+        <p>TechWorld fue fundada en 2010 por un grupo de entusiastas de la tecnología que compartían una pasión por las computadoras y 
+            el deseo de hacer que la tecnología de calidad fuera accesible para todos. Comenzando como una pequeña tienda local en el corazón 
+            de la ciudad, la empresa rápidamente ganó popularidad gracias a su enfoque en el servicio al cliente y su amplia gama de productos.
+
+            A lo largo de los años, TechWorld ha evolucionado, expandiendo su catálogo para incluir no solo computadoras de escritorio y laptops, sino también accesorios, periféricos y servicios de asesoramiento personalizado. En 2015, lanzamos nuestra tienda en línea, lo que permitió a los clientes comprar desde la comodidad de sus hogares. Hoy en día, TechWorld cuenta con múltiples ubicaciones físicas y una sólida presencia en línea, comprometidos a seguir brindando soluciones tecnológicas de alta calidad a nuestros clientes..</p>
+        <h3>Misión</h3>
+        <p>Nuestra misión es proporcionar tecnología accesible y de alta calidad que empodere a nuestros clientes a alcanzar 
+            sus objetivos personales y profesionales. Nos comprometemos a ofrecer un servicio excepcional y a estar a la vanguardia de 
+            las innovaciones en el mundo de la computación, 
+            asegurando que cada cliente encuentre la solución perfecta para sus necesidades.</p>
+        <h3>Visión</h3>
+        <p>Nuestra visión es ser reconocidos como el líder en la venta de computadoras y soluciones tecnológicas en el mercado, 
+            siendo la primera opción para consumidores y empresas. Aspiramos a innovar constantemente y expandir nuestra oferta de productos, 
+            convirtiéndonos en un referente de calidad, confianza y servicio en el sector tecnológico.</p>
+        <h3>Equipo</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/im2.avif') }}" alt="Miembro 1" class="img-fluid" width="400">
+                <p>Michell Naid Colque Herrera</p>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/im3.jpg') }}" alt="Miembro 2" class="img-fluid" width="400">
+                <p>Luis Fernando Carreaga Laure</p>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5">
+        <p>&copy; TechWorld 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - TechWorld</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">TechWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/quienesSomos">Quiénes Somos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="/noticias">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <h1>Nuestros Servicios</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='img/ase.jfif') }}" class="card-img-top" alt="Servicio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Asesoría Personalizada en Tecnología</h5>
+                        <p class="card-text">Nuestro equipo de expertos está disponible para ofrecer asesoría personalizada a clientes que buscan 
+                            la computadora adecuada para sus necesidades. Ya sea para uso personal, académico o profesional, ayudamos a nuestros 
+                            clientes a seleccionar el equipo que mejor se adapte a sus requisitos.</p>
+                        <a href="/servicios/service1" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='img/images.png') }}" class="card-img-top" alt="Servicio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Instalación y Configuración de Sistemas</h5>
+                        <p class="card-text">Ofrecemos un servicio completo de instalación y configuración de computadoras, garantizando que los 
+                            dispositivos funcionen correctamente desde el primer momento. Nuestro equipo se encargará de la instalación del 
+                            sistema operativo, programas y configuraciones personalizadas.</p>
+                        <a href="/services/service2" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='img/man.jpg') }}" class="card-img-top" alt="Servicio 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento y Reparación de Equipos</h5>
+                        <p class="card-text">TechWorld proporciona servicios de mantenimiento preventivo y reparación para asegurar que 
+                            tus dispositivos funcionen de manera óptima. Ya sea una laptop, computadora de escritorio o un periférico, 
+                            nuestro equipo técnico está listo para ayudarte.</p>
+                        <a href="/services/service3" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center mt-5">
+        <p>&copy; TechWorld 2024 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
